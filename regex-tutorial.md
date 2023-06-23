@@ -36,15 +36,35 @@ While not an anchor, the regex may be required to be wrapped in slash chars "/" 
 
 This signifies the beginning of the expression
 
-$
+/$
 
 This signifies the end of the expression
+
+### Grouping and Capturing
+
+()
+
+This groups multiple tokens together, in our case it requires the alphanumeric characters to follow the "#" symbol
+
+### Bracket Expressions
+
+[a-f0-9]
+
+This checks if a given character is a-f or 0-9, meaning that any character within the range is acceptable.
 
 ### Quantifiers
 
 #?
 
-The ? indicates that the preceding symbol is optional, in this case the "#" which is commonly used to denote hexidecimal numbers
+The ? indicates that the preceding symbol is optional, meaning it requires either 0 or 1. In this case it is the "#" which is commonly used to denote hexidecimal numbers
+
+[a-f0-9]{6}
+
+The {6} indicates that there is exactly 6 of the preceding character, similarly
+
+[a-f0-9]{3}
+
+indicates that there is exactly 3 of the preceding character
 
 ### OR Operator
 
@@ -57,12 +77,6 @@ This character checks if at least one of the cases matches
 ```
 
 In this case it checks if either [a-f0-9]{6} or [a-f0-9]{3} is satisfied
-
-### Character Classes
-
-### Flags
-
-### Bracket Expressions
 
 ## Author
 
