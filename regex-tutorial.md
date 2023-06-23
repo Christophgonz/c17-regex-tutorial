@@ -1,10 +1,10 @@
 # Regex Breakdown
 
-Introductory paragraph (replace this with your text)
+intro paragraph
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This will be a tutorial on how to understand a regular expression, also known as regex. The following regex is one that is commonly used to match to a hexidecimal number: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Table of Contents
 
