@@ -42,23 +42,27 @@ This signifies the end of the expression
 
 ### Quantifiers
 
+#?
+
+The ? indicates that the preceding symbol is optional, in this case the "#" which is commonly used to denote hexidecimal numbers
+
 ### OR Operator
+
+|
+
+This character checks if at least one of the cases matches
+
+```
+[a-f0-9]{6}|[a-f0-9]{3}
+```
+
+In this case it checks if either [a-f0-9]{6} or [a-f0-9]{3} is satisfied
 
 ### Character Classes
 
 ### Flags
 
-### Grouping and Capturing
-
 ### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
