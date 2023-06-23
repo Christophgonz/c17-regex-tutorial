@@ -4,7 +4,11 @@ intro paragraph
 
 ## Summary
 
-This will be a tutorial on how to understand a regular expression, also known as regex. The following regex is one that is commonly used to match to a hexidecimal number: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+This will be a tutorial on how to understand a regular expression, also known as regex. The following regex is one that is commonly used to match to a hexidecimal number:
+
+```
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+```
 
 ## Table of Contents
 
@@ -22,7 +26,19 @@ This will be a tutorial on how to understand a regular expression, also known as
 
 ## Regex Components
 
+/
+
+While not an anchor, the regex may be required to be wrapped in slash chars "/" since they are considered literals in some languages.
+
 ### Anchors
+
+^
+
+This signifies the beginning of the expression
+
+$
+
+This signifies the end of the expression
 
 ### Quantifiers
 
